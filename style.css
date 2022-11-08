@@ -21,41 +21,69 @@ main {
    align-items: center;
    justify-content: center;
 }
-.form-side {
-   padding: 3rem;
-   color: white;
-   background-color: black;
-   width: 65vw;
-}
 .logo {
    text-align: center;
    width: 100%;
    background-color: rgba(0, 0, 0, 0.39);
    font-size: 3rem;
 }
+.form-side {
+   padding: 5vh 5vw;
+   color: white;
+   background-color: black;
+   width: 65vw;
+}
+.discreption {
+   height: 40%;
+   width: 100%;
+}
+
 form {
-   padding-top: 3rem;
+   height: 60%;
    width: 100%;
    display: flex;
    flex-wrap: wrap;
    border: 2px solid black;
    justify-content: space-between;
    align-items: center;
-`}
+}
 form > div {
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
-   width: 20vw;
+   width: 50%;
    align-items: flex-start;
    justify-content: left;
    padding: 0.5rem;
 }
 input {
-   width: 20vw;
+   border-radius: 3px;
+   outline: none;
+   box-shadow: rgba(255, 255, 255, 0.37) 0px 0px 10px 3px;
+   border: 0;
+   width: 80%;
+}
+
+input:focus {
+   border: 0;
+
+   scale: 104%;
+   box-shadow: rgba(255, 255, 255, 0.37) 0px 0px 10px 6px;
+}
+
+label {
+   padding: 0.3rem 0rem;
 }
 
 button {
    padding: 0.5rem 1rem;
    cursor: pointer;
+}
+.error {
+   box-shadow: rgba(255, 0, 0, 0.37) 0px 0px 10px 6px;
+   background-color: rgb(255, 210, 210);
+}
+
+.confirm {
+   border: 3px solid red;
 }
