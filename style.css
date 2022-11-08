@@ -3,3 +3,59 @@
    margin: 0;
    box-sizing: border-box;
 }
+main {
+   display: flex;
+   flex-direction: row;
+   height: 100vh;
+}
+.logo-side {
+   width: 35vw;
+   background: rgb(2, 0, 36);
+   background: linear-gradient(
+      13deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+   );
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.form-side {
+   padding: 3rem;
+   color: white;
+   background-color: black;
+   width: 65vw;
+}
+.logo {
+   text-align: center;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.39);
+   font-size: 3rem;
+}
+form {
+   padding-top: 3rem;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   border: 2px solid black;
+   justify-content: space-between;
+   align-items: center;
+`}
+form > div {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   width: 20vw;
+   align-items: flex-start;
+   justify-content: left;
+   padding: 0.5rem;
+}
+input {
+   width: 20vw;
+}
+
+button {
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+}
